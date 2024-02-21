@@ -4,6 +4,7 @@
  */
 package refuerzo;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -18,12 +19,17 @@ public class Problema01 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
 
         // Mensaje inicial
         System.out.println("Bienvenido a la pescadería de la ciudad");
 
         // Bucle para ingresar información de los pescadores
+        double librasCamarón;
+        double librasBacalao;
+
         while (true) {
+
             // Pedir datos del pescador
             System.out.print("Ingrese el nombre del pescador (o 'fin' para terminar): ");
             String nombre = entrada.nextLine();
@@ -32,9 +38,9 @@ public class Problema01 {
                 break;
             }
             System.out.print("Ingrese el número de libras de camarón: ");
-            double librasCamarón = Double.parseDouble(entrada.nextLine());
+            librasCamarón = entrada.nextDouble();
             System.out.print("Ingrese el número de libras de bacalao: ");
-            double librasBacalao = Double.parseDouble(entrada.nextLine());
+            librasBacalao = entrada.nextDouble();
 
             // Calcular el costo total
             double costoTotal = calcularCostoTotal(librasCamarón, librasBacalao);
