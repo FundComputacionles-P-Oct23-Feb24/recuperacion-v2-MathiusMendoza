@@ -21,20 +21,20 @@ public class Problema01 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
 
-        // Mensaje inicial
+        
         System.out.println("Bienvenido a la pescadería de la ciudad");
 
-        // Bucle para ingresar información de los pescadores
+       
         double librasCamarón;
         double librasBacalao;
 
         while (true) {
 
-            // Pedir datos del pescador
-            System.out.print("Ingrese el nombre del pescador (o 'fin' para terminar): ");
+           
+            System.out.print("Ingrese el nombre del pescador o 'salir' para terminar: ");
             String nombre = entrada.nextLine();
-            if (nombre.equals("fin")) {
-                // Si se ingresa "fin", salir del bucle
+            if (nombre.equals("salir")) {
+              
                 break;
             }
             System.out.print("Ingrese el número de libras de camarón: ");
@@ -42,10 +42,9 @@ public class Problema01 {
             System.out.print("Ingrese el número de libras de bacalao: ");
             librasBacalao = entrada.nextDouble();
 
-            // Calcular el costo total
             double costoTotal = calcularCostoTotal(librasCamarón, librasBacalao);
 
-            // Mostrar el reporte
+           
             System.out.println("Pescador: " + nombre);
             System.out.println("Libras de camarón: " + librasCamarón + " - costo $" + (librasCamarón * 1.1));
             System.out.println("Libras de bacalao: " + librasBacalao + " - costo $" + (librasBacalao * 1.2));
