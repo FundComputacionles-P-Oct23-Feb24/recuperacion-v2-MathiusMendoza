@@ -13,7 +13,8 @@ public class Problema02 {
     public static void main(String[] args) {
         // TODO code application logic here
         String[] equipos = {"Barcelona", "Emelec", "Liga de Quito",
-            "Independiente del Valle", "Delfin", "Macará", "Deportivo Cuenca", "Orense"};
+            "Independiente del Valle", "Delfin", "Macará",
+            "Deportivo Cuenca", "Orense"};
         int[][] goles = {
             {1, 2, 2, 5},
             {4, 1, 1, 4},
@@ -26,11 +27,13 @@ public class Problema02 {
         };
 
         for (int i = 0; i < equipos.length; i++) {
-            presentarReporte(equipos[i], goles[i][0], goles[i][1], goles[i][2], goles[i][3]);
+            presentarReporte(equipos[i], goles[i][0], goles[i][1], goles[i][2],
+                    goles[i][3]);
         }
     }
 
-    public static void presentarReporte(String equipo, int p1, int p2, int p3, int p4) {
+    public static void presentarReporte(String equipo, int p1, int p2, int p3,
+            int p4) {
         int puntosA = p1 + p2 + p3 + p4;
         System.out.println(equipo + " con puntos: " + p1 + ", " + p2 + ", "
                 + p3 + ", " + p4 + " tiene un total de puntos de " + puntosA);
