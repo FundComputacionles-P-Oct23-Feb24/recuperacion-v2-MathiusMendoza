@@ -11,18 +11,23 @@ package refuerzo;
 public class Problema04 {
 
     public static void main(String[] args) {
-        // TODO code application logic here}
-        int num = 1;
-
-        while (num <= 6) {
-            double termino = calcularTermino(num);
-            System.out.println("(" + num + "*" + (2 * num) + ")/" + (7 * num) 
+        // TODO code application logic here
+        // itera sobre los terminos que da la serie
+        for (int n = 1; n <= 6; n++) {
+            // procesa el numero actual con cada iteracion.
+            double termino = calcularTermino(n);
+            // imprime su termino actual de la serie
+            System.out.println("(" + n + "*" + (2 * n) + ")/" + (7 * n) 
                     + " = " + termino);
-            num++;
+         
+            
         }
     }
-
-    public static double calcularTermino(int n) {
-        return (n * (n + 1)) / (7 * n);
+    // Funcion que me permite calcular n de una serie.
+    public static double calcularTermino(int n){
+        return (n*(n+1))/(7*n);
     }
 }
+
+
+

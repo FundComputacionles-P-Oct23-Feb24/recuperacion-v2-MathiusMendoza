@@ -30,10 +30,11 @@ public class Problema03 {
             }
         }
     }
+
     // Se crea la funcion para poder enviar los datos al metodo principal.
     public static String generarDatos(String mes, int numTelevisores,
             int numCelulares) {
-        return mes + ": televisores " + numTelevisores + " - celulares " 
+        return mes + ": televisores " + numTelevisores + " - celulares "
                 + numCelulares;
     }
 
