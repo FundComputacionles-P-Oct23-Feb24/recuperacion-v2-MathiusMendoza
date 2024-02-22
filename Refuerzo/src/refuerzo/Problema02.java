@@ -12,6 +12,8 @@ public class Problema02 {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // Arrelgos de tipo unidimencional y bidimencioanl.
         String[] equipos = {"Barcelona", "Emelec", "Liga de Quito",
             "Independiente del Valle", "Delfin", "Macará",
             "Deportivo Cuenca", "Orense"};
@@ -25,13 +27,14 @@ public class Problema02 {
             {4, 0, 3, 2},
             {3, 1, 2, 1}
         };
-
+        // Un ciclo for el cual me permite iterar por cada arreglo de equipos y goles.
         for (int i = 0; i < equipos.length; i++) {
             presentarReporte(equipos[i], goles[i][0], goles[i][1], goles[i][2],
                     goles[i][3]);
         }
     }
-
+    // Procedimiento para poder presentar el reporte de cada equipo,
+    // cada que es llamado.
     public static void presentarReporte(String equipo, int p1, int p2, int p3,
             int p4) {
         int puntosA = p1 + p2 + p3 + p4;
