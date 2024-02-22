@@ -12,13 +12,17 @@ public class Problema04 {
 
     public static void main(String[] args) {
         // TODO code application logic here}
+        int num = 1;
 
-        for (int i = 1; i <= 6; i++) {
-            int numerador = i * 2;
-            int denominador = i * 7;
-            double termino = (double) numerador / denominador;
-            System.out.println("(" + numerador + "*" + (i * 2) + ")/" + denominador + " = " + termino);
+        while (num <= 6) {
+            double termino = calcularTermino(num);
+            System.out.println("(" + num + "*" + (2 * num) + ")/" + (7 * num) 
+                    + " = " + termino);
+            num++;
         }
     }
 
+    public static double calcularTermino(int n) {
+        return (n * (n + 1)) / (7 * n);
+    }
 }
