@@ -23,13 +23,13 @@ public class Problema03 {
 
         for (int i = 0; i < meses.length; i++) {
             if (ventaNumeroCelulares[i] <= 35) {
-                System.out.println(generarReporte(meses[i],
+                System.out.println(generarDatos(meses[i],
                         ventaNumeroTelevisores[i], ventaNumeroCelulares[i]));
             }
         }
     }
 
-    public static String generarReporte(String mes, int numTelevisores,
+    public static String generarDatos(String mes, int numTelevisores,
             int numCelulares) {
         return mes + ": televisores " + numTelevisores + " - celulares " 
                 + numCelulares;
