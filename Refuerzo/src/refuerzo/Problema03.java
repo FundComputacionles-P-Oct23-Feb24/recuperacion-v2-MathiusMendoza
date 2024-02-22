@@ -20,7 +20,9 @@ public class Problema03 {
             40, 50, 60};
 
         System.out.println("El reporte de meses es:");
-
+        // Este ciclo me permite iterar en el arreglo meses y las ventas C,
+        // verificando si el numeroC es menor o igual a 35.
+        // Se llama a la funcion para obtener su cadena y presentar.
         for (int i = 0; i < meses.length; i++) {
             if (ventaNumeroCelulares[i] <= 35) {
                 System.out.println(generarDatos(meses[i],
@@ -28,7 +30,7 @@ public class Problema03 {
             }
         }
     }
-
+    // Se crea la funcion para poder enviar los datos al metodo principal.
     public static String generarDatos(String mes, int numTelevisores,
             int numCelulares) {
         return mes + ": televisores " + numTelevisores + " - celulares " 
