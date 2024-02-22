@@ -38,7 +38,7 @@ public class Problema01 {
             String nombre = entrada.nextLine();
             // Si el ususario ya no descea ingresar mas pescadores, sale del ciclo.
             if (nombre.equals("salir")) {
-              
+                // Sale
                 break;
             }
             // Ingresa datos 
