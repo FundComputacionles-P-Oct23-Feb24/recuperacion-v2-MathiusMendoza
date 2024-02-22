@@ -42,7 +42,7 @@ public class Problema01 {
             System.out.print("Ingrese el número de libras de bacalao: ");
             librasBacalao = entrada.nextDouble();
 
-            double costoTotal = calcularCostoTotal(librasCamarón, librasBacalao);
+            double costoTotal = costoTotal(librasCamarón, librasBacalao);
 
            
             System.out.println("Pescador: " + nombre);
@@ -53,7 +53,7 @@ public class Problema01 {
 
     }
 
-    public static double calcularCostoTotal(double librasCamarón, double librasBacalao) {
+    public static double costoTotal(double librasCamarón, double librasBacalao) {
         double costoCamarón = librasCamarón * 1.1;
         double costoBacalao = librasBacalao * 1.2;
         return costoCamarón + costoBacalao;
